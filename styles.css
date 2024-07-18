@@ -1,3 +1,4 @@
+/* Reset und grundlegende Stile */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -215,12 +216,12 @@ footer section:target {
 
     header #logo {
         height: 60px; /* Noch kleinere Höhe für das Logo */
-        margin-left: 20px; /* Weniger Abstand für das Logo */
+        margin-left: 20px; 
     }
 
     nav ul {
-        flex-direction: column; /* Links untereinander für mobile Ansicht */
-        align-items: center; /* Zentrieren der Links */
+        flex-direction: column; 
+        align-items: center;
     }
 
     nav ul li {
