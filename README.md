@@ -1,6 +1,6 @@
 Es handelt sich um eine fiktive Website mit fiktiven Informationen im Rahmen einer Hochschularbeit. 
 
-Alle Grafiken sind eine eigene Darstellung. 
+Alle Grafiken sind selbsterstellt. 
 
 Die Haupt-Dateien sind:
 - index.html
@@ -12,5 +12,5 @@ Die Dateien:
 - mitmachen.html
 - nachhaltige-Unternehmen.html
 
-dienen für weitere Verlinkungen innerhalb der Website 
+dienen für weitere Verlinkungen innerhalb der Website.
 
