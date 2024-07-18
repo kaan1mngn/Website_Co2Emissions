@@ -1,0 +1,243 @@
+/* Reset und grundlegende Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #598a5b;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #388e3c; 
+}
+
+header #logo {
+    height: 110px;
+    margin-left: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 120px;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2, h3, h4 {
+    color: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+th:hover {
+    background-color: #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    clear: both;
+}
+
+footer ul.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+footer ul.footer-links li {
+    margin: 5px 0;
+}
+
+footer ul.footer-links li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer ul.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+footer section {
+    display: none;
+    margin-top: 20px;
+}
+
+footer section:target {
+    display: block;
+}
+
+/* Statische Seitenleiste */
+#side-nav {
+    position: fixed;
+    top: 150px;
+    left: calc(85% + 30px);
+    width: 120px;
+    background-color: #f4f4f9;
+    padding-top: 20px;
+}
+
+#side-nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#side-nav ul li {
+    margin-bottom: 50px;
+}
+
+#side-nav ul li a {
+    display: block;
+    color: #137946;
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+#side-nav ul li a:hover {
+    text-decoration: none;
+}
+
+/* Tabellen-Steuerelemente */
+.table-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Elemente umwickeln, wenn der Platz nicht ausreicht */
+}
+
+.table-controls label {
+    margin-right: 10px;
+}
+
+.table-controls select,
+.table-controls input[type="text"] {
+    flex: 1; /* Nimmt verfügbaren Platz ein */
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 14px;
+    width: 100%; /* Füge diese Zeile hinzu, um die Breite anzupassen */
+    box-sizing: border-box; /* Behalte die Breite inklusive Padding und Border bei */
+}
+
+/* Media Queries für verschiedene Bildschirmgrößen */
+
+/* Für größere Bildschirme */
+@media only screen and (max-width: 1024px) {
+    header #logo {
+        height: 80px; /* Logo verkleinern */
+    }
+
+    main {
+        padding: 10px; /* Weniger Padding im Hauptinhalt */
+    }
+
+    table {
+        font-size: 12px; /* Kleinere Schriftgröße für die Tabelle */
+    }
+
+    #side-nav {
+        display: none; /* Verstecke die Seitenleiste auf Tablets */
+    }
+}
+
+/* Für Smartphones und kleinere Bildschirme */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 5px 0; /* Weniger Padding im Header */
+    }
+
+    header #logo {
+        height: 60px; /* Noch kleinere Höhe für das Logo */
+        margin-left: 20px; /* Weniger Abstand für das Logo */
+    }
+
+    nav ul {
+        flex-direction: column; /* Links untereinander für mobile Ansicht */
+        align-items: center; /* Zentrieren der Links */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Kein Abstand zwischen den Links */
+        margin-bottom: 10px; /* Weniger Abstand zwischen den Links */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Größere Schriftgröße für die Links */
+    }
+
+    main {
+        padding: 5px; /* Weniger Padding im Hauptinhalt */
+    }
+
+    table {
+        font-size: 10px; /* Kleinere Schriftgröße für die Tabelle */
+    }
+}

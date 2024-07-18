@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLense</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="EcoLensLogo.png" alt="EcoLens Logo" id="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Startseite</a></li>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#country-emissions">Länderemissionen</a></li>
+                <li><a href="#company-emissions">Unternehmensemissionen</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Willkommen bei EcoLense!</h1>
+            <p>Wir bieten Transparenz über weltweite CO2-Emissionen verschiedener Länder und Unternehmen.</p>
+        </section>
+        <section id="about">
+            <h2>Über uns</h2>
+            <p>Wir sind Ihre Quelle für Transparenz der weltweiten Co2-Emissionen. Es ist unsere Missionen, klare und präzise Daten über die jährliche Co2-Emission verschiedener Länder und Unternehmen zu liefern.</p>
+            <p>Diese Transparenz ist entscheidend, um das Bewusstsein für die Auswirkungen unserer Gesellschaft auf das Klima zu verschärfen. Unser Motto bei EcoLense lautet: Wissen ist Macht.</p>
+            <p>Wir möchten Sie ermutigen, aktiv am Kampf gegen den Klimawandel teilzunehmen, indem wir wichtige Daten zugänglich und verständlich machen.</p>
+            <img src="BannerEcoLense.png" alt="EcoLense Banner">
+        </section>
+        <section id="country-emissions">
+            <h2>Länderemissionen</h2>
+            <div class="table-controls">
+                <label for="country-sort">Sortieren nach:</label>
+                <select id="country-sort">
+                    <option value="ascending">CO2-Emissionen Aufsteigend</option>
+                    <option value="descending">CO2-Emissionen Absteigend</option>
+                </select>
+                <input type="text" id="country-search" placeholder="Land suchen...">
+            </div>
+            <table id="country-table">
+                <thead>
+                    <tr>
+                        <th>Land</th>
+                        <th>CO2-Emissionen (Mio. Tonnen/Jahr)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Deutschland</td>
+                        <td>700</td>
+                    </tr>
+                    <tr>
+                        <td>China</td>
+                        <td>8000</td>
+                    </tr>
+                    <tr>
+                        <td>Russland</td>
+                        <td>1500</td>
+                    </tr>
+                    <tr>
+                        <td>Japan</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>Kanada</td>
+                        <td>650</td>
+                    </tr>
+                    <tr>
+                        <td>Frankreich</td>
+                        <td>400</td>
+                    </tr>
+                    <tr>
+                        <td>USA</td>
+                        <td>5000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="company-emissions">
+            <h2>Unternehmensemissionen</h2>
+            <div class="table-controls">
+                <label for="company-sort">Sortieren nach:</label>
+                <select id="company-sort">
+                    <option value="ascending">CO2-Emissionen Aufsteigend</option>
+                    <option value="descending">CO2-Emissionen Absteigend</option>
+                </select>
+                <input type="text" id="company-search" placeholder="Unternehmen suchen...">
+            </div>
+            <table id="company-table">
+                <thead>
+                    <tr>
+                        <th>Unternehmen</th>
+                        <th>Branche</th>
+                        <th>CO2-Emissionen (Mio. Tonnen/Jahr)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Urban Oil Ltd.</td>
+                        <td>Öl</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>MegaTech Solutions</td>
+                        <td>Technologie</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Aero Dynamics Inc.</td>
+                        <td>Luft- und Raumfahrt</td>
+                        <td>170</td>
+                    </tr>
+                    <tr>
+                        <td>GrandeLife Real Estate</td>
+                        <td>Immobilienbranche</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Luxury Beach Homes</td>
+                        <td>Hotelkette</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>EasyHealth Pharmaceuticals</td>
+                        <td>Pharmazie</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>ABC Mining Group</td>
+                        <td>Bergbau</td>
+                        <td>250</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Kaan Müngen</p>
+            <p>Baumstraße 100</p>
+            <p>12345 Deutschland</p>
+            <p>Email: <a href="mailto:kaan.muengen@ecolense.com">kaan.muengen@ecolense.com</a></p>
+            <p>Telefon: +49 123 45678</p>
+        </section>
+    </main>
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#impressum">Impressum</a></li>
+            <li><a href="#datenschutzerklaerung">Datenschutzerklärung</a></li>
+            <li><a href="#copyright">Copyright-Hinweis</a></li>
+        </ul>
+        <section id="impressum">
+            <h4>Impressum</h4>
+            <p>Angaben gemäß § 5 TMG:</p>
+            <p>EcoLense GmbH</p>
+            <p>Baumstraße 100</p>
+            <p>12345 Deutschland</p>
+            <p>Vertreter:</p>
+            <p>Kaan Müngen</p>
+            <p>Email: <a href="mailto:kaan.muengen@ecolense.com">kaan.muengen@ecolense.com</a></p>
+            <p>Telefon: +49 123 45678</p>
+        </section>
+        <section id="datenschutzerklaerung">
+            <h4>Datenschutzerklärung</h4>
+            <p>Wir verwenden Ihre Daten ausschließlich zur Sicherstellung unserer Website-Funktionalitäten und zur Analyse des Nutzerverhaltens.</p>
+            <p>Für Anfragen zum Thema Datenschutz: <a href="mailto:datenschutz@ecolense.com">datenschutz@ecolense.com</a></p>
+        </section>
+        <section id="copyright">
+            <h4>Copyright-Hinweis</h4>
+            <p>Alle Inhalte dieser Website sind urheberrechtlich geschützt. Jede Nutzung bedarf einer Zustimmung der EcoLense GmbH. Alle genannten Marken und Unternehmen sind Eigentum der jeweiligen Rechteinhaber. Eine Verwendung dieser stellt keine Verletzung für Rechte Dritter dar.</p>
+        </section>
+    </footer>
+    <aside id="side-nav">
+        <ul>
+            <li><a href="faq.html" target="_blank">FAQ</a></li>
+            <li><a href="mitmachen.html" target="_blank">Mitmachen</a></li>
+            <li><a href="nachhaltige-unternehmen.html" target="_blank">Nachhaltige Unternehmen</a></li> 
+        </ul>
+    </aside>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Scroll-Funktion für Header-Links
+            document.querySelectorAll('header nav ul a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const target = document.querySelector(this.getAttribute('href'));
+                    window.scrollTo({
+                        top: target.offsetTop - 120, // Offset entsprechend der Header-Höhe
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
