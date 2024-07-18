@@ -18,20 +18,25 @@ document.addEventListener('DOMContentLoaded', function() {
         rows.forEach(row => table.querySelector('tbody').appendChild(row));
     };
 
+    // Validierung und Reinigung von Eingaben
+    const sanitizeInput = (input) => {
+        const pattern = /[^a-zA-Z\s]/g; // Erlaubt nur Buchstaben und Leerzeichen
+        return input.replace(pattern, '');
+    };
 
-    // Event Listener für Länderemissionen
+    // Länderemissionen
     document.getElementById('country-sort').addEventListener('change', function() {
         const selectedOption = this.value;
         sortTable(countryTable, countryRows, 1, selectedOption);
     });
 
-    // Event Listener für Unternehmensemissionen
+    // Unternehmensemissionen
     document.getElementById('company-sort').addEventListener('change', function() {
         const selectedOption = this.value;
         sortTable(companyTable, companyRows, 2, selectedOption);
     });
 
-    // Event Listener für Suchleiste Länderemissionen
+    // Suchleiste Länderemissionen
     document.getElementById('country-search').addEventListener('input', function() {
         const searchText = this.value.trim().toLowerCase();
         countryRows.forEach(row => {
@@ -44,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Event Listener für Suchleiste Unternehmensemissionen
+    // Suchleiste Unternehmensemissionen
     document.getElementById('company-search').addEventListener('input', function() {
         const searchText = this.value.trim().toLowerCase();
         companyRows.forEach(row => {
