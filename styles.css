@@ -1,4 +1,3 @@
-/* Reset und grundlegende Stile */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -170,7 +169,7 @@ footer section:target {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    flex-wrap: wrap; /* Elemente umwickeln, wenn der Platz nicht ausreicht */
+    flex-wrap: wrap; 
 }
 
 .table-controls label {
@@ -179,12 +178,12 @@ footer section:target {
 
 .table-controls select,
 .table-controls input[type="text"] {
-    flex: 1; /* Nimmt verfügbaren Platz ein */
+    flex: 1; 
     margin-right: 10px;
     padding: 5px;
     font-size: 14px;
-    width: 100%; /* Füge diese Zeile hinzu, um die Breite anzupassen */
-    box-sizing: border-box; /* Behalte die Breite inklusive Padding und Border bei */
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 /* Media Queries für verschiedene Bildschirmgrößen */
@@ -241,8 +240,8 @@ footer section:target {
         font-size: 10px; /* Kleinere Schriftgröße für die Tabelle */
     }
 
-    /* Anpassung für die mobile Ansicht der Überschrift "Unternehmensemissionen" */
+    /* Anpassung für mobile Ansicht der Überschrift "Unternehmensemissionen" */
     #faq h2 {
-        font-size: 18px; /* Reduziert die Schriftgröße für die Überschrift "Unternehmensemissionen" */
+        font-size: 18px; 
     }
 }
